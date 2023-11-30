@@ -61,7 +61,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-danger"><i class='bx bx-log-out'></i>
+                <a href="" class="nav-link text-danger"><i class='bx bx-log-out'></i>
                     <span class="text">LogOut</span>
                 </a>
             </li>
