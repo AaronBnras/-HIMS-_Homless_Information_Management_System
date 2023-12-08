@@ -34,6 +34,8 @@ li {
 }
 
 
+
+
 /* SIDEBAR */
 
 #sidebar {
@@ -50,7 +52,7 @@ li {
 }
 
 #sidebar.hide {
-    width: 68px;
+    width: 60px;
 }
 
 #sidebar .brand {
@@ -101,7 +103,7 @@ li {
 #sidebar .side-menu li.active::after {
     content: '';
     position: absolute;
-    width: 40px;
+    width: 50px;
     height: 40px;
     border-radius: 50%;
     bottom: -40px;
@@ -142,7 +144,7 @@ li {
 #sidebar .side-menu li a .bx {
     min-width: calc(64px - ((4px + 6px) *2));
     display: flex;
-    justify-content: center;
+    justify-content: left -10;
 }
 
 
@@ -282,3 +284,37 @@ li {
 
 
 /* CONTENT */
+
+@media screen and (max-width: 768px){
+    #content {
+        width: calc(100% - 60px);
+    }
+    #content .nav-link {
+        display: none;  
+    } 
+}
+
+
+@media screen and (max-width: 576px){
+    
+    #content nav form .form-input input{
+        display: none;
+    }
+    #content nav form .form-input button{
+        width: auto;
+        height: auto;
+        background: transparent;
+        border-radius: none !important;
+        color: var(--dark);
+    }
+    #content nav form.show .form-input input{
+        display: block;
+    }
+    #content nav form.show .form-input button{
+        width: 36px;
+        height: 100%;
+        border-radius: 0 36px 36px 0;
+        color: var(--light);
+        background: var(--red);
+    }
+}
